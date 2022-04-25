@@ -1,0 +1,186 @@
+/* utilities starts */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    gap: 1.5rem;
+}
+
+.container {
+    margin: 0 auto;
+    width: 800px;
+}
+/* utilities ends */
+
+/* header starts */
+.header-profile {
+    background-color: black;
+    color: whitesmoke;
+    padding: 20px;
+}
+
+.nav-list {
+    font-size: 15px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+/* header ends */
+
+/* column left starts */
+.col-left {
+    /* width: 400px; */
+    flex: 3;
+}
+
+.user-card {
+    border: 2px solid lightblue;
+    margin-top: 40px;
+}
+
+.header-j {
+    background-color: dodgerblue;
+    height: 80px;
+}
+
+.jane {
+    border-radius: 50%;
+    border: solid whitesmoke;
+    height: 80px;
+    margin: 40px 0px 0px 20px;
+}
+
+.h1-jane {
+    margin: 40px 0px 0px 20px;
+}
+
+.ping {
+    height: 20px;
+    margin-left: 20px;
+}
+
+.gear {
+    height: 20px;
+    margin-left: 20px;
+}
+
+.education {
+    border: 2px solid lightslategray;
+    margin-top: 20px;
+}
+
+.darkgray-header {
+    background-color: rgb(51, 51, 51);
+    color: whitesmoke;
+    font-size: 10px;
+}
+/* column left ends */
+
+/* column right starts */
+.col-right {
+    /* width: 300px; */
+    align-self: flex-start;
+    margin-top: 64px;
+    flex: 2;
+}
+
+.requests {
+    border: 2px solid lightslategray;
+}
+
+.todd-e {
+    padding: 0px 40px;
+    margin: 10px 0px;
+}
+
+.todd-e img {
+    border-radius: 50%;
+    height: 40px;
+}
+
+.todd img {
+    border: 2px solid black;
+}
+
+.phil-k {
+    padding: 0px 40px;
+    margin: 10px 0px;
+}
+
+.phil-k img {
+    border-radius: 50%;
+    height: 40px;
+}
+
+.phil img {
+    border: 2px solid black;
+}
+
+.a-d img{
+    height: 30px;
+}
+
+.connections {
+    border: 2px solid lightslategray;
+    margin-top: 20px;
+}
+
+.friends-list li {
+    margin: 10px 30px;
+}
+
+.friends-list img {
+    border-radius: 50%;
+    height: 40px;
+    border: 2px solid black;
+}
+
+footer {
+    border-top: 2px solid lightslategray;
+    padding: 7px;
+}
+/* column right ends */
+
+button {
+    background-color: dodgerblue;
+    border: none;
+    border-radius: 5%;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 5px;
+    margin-left: 300px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+p {
+    margin: 10px 0px 10px 20px;
+}
+
+.settings {
+    padding-bottom: 20px;
+}
+
+h2 {
+    padding: 10px;
+}
+
+h3 {
+    margin: 15px
+}
