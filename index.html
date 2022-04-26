@@ -18,8 +18,8 @@
                     <li class="bold"><a href="#">My Profile</a></li>
                     <li><a href="#">Find Connnections</a></li>
                 </ul>
-                <button>Sign Out</button>
             </div>
+            <button>Sign Out</button>
         </div>
     </header>
     <!-- Header ends -->
@@ -32,7 +32,7 @@
                 <header class="header-j">
                     <img src="./img/jane-m.jpg" alt="Jane" class="jane">
                 </header>
-                <h1 class="h1-jane">Jane M</h1>
+                <h1 class="h1-jane" id="devNinja">Jane M</h1>
                 <div class="location">
                     <img src="./icons/map-marker.png" alt="location" class="ping">
                     <span>Los Angeles, CA</span>
@@ -41,7 +41,7 @@
                 Master of shadows and the Internet</p>
                 <a href="#" class="settings">
                     <img src="./icons/gear.png" alt="gear" class="gear">
-                    <span>edit profile</span>
+                    <span onclick="changeName(devNinja)">edit profile</span>
                 </a>
             </div>
             <!-- Education card starts -->
@@ -61,49 +61,49 @@
             <!-- Connection requests starts -->
             <div class="requests">
                 <header class="darkgray-header">
-                    <h2>Connection Requests</h2>
+                    <h2><span class="total-rq" id="totalRequests">2</span> Connection Requests</h2>
                 </header>
-                <div class="todd-e flex">
+                <div class="todd-e flex" id="gone1">
                     <div class="todd flex">
                         <img src="./img/todd-s.jpg" alt="Todd">
                         <span>Todd E</span>
                     </div>
                     <div class="a-d">
-                        <img src="./icons/accept-circle.png" alt="accept">
-                        <img src="./icons/close-circle.png" alt="close">
+                        <img onclick="addConnections('#gone1')" src="./icons/accept-circle.png" alt="accept">
+                        <img onclick="subConnections('#gone1')" src="./icons/close-circle.png" alt="close">
                     </div>
                 </div>
-                <div class="phil-k flex">
+                <div class="phil-k flex" id="gone2">
                     <div class="phil flex">
                         <img src="./img/phil-s.jpg" alt="Phil">
                         <span>Phil K</span>
                     </div>
                     <div class="a-d">
-                        <img src="./icons/accept-circle.png" alt="accept">
-                        <img src="./icons/close-circle.png" alt="close">
+                        <img onclick="addConnections('#gone2')" src="./icons/accept-circle.png" alt="accept">
+                        <img onclick="subConnections('#gone2')" src="./icons/close-circle.png" alt="close">
                     </div>
                 </div>
             </div>
             <!-- Connections card starts -->
             <div class="connections">
                 <header class="darkgray-header">
-                    <h2>Your Connections</h2>
+                    <h2><span class="total-cn" id="totalConnects">500</span> Connections</h2>
                 </header>
-                <div class="friends-list flex">
-                    <ul class="">
-                        <li class="flex">
+                <div class="friends-list">
+                    <ul class="flex-col">
+                        <li>
                             <img src="./img/adrien-s.jpg" alt="Adrien">
                             <span>Adrien D</span>
                         </li>
-                        <li class="flex">
+                        <li>
                             <img src="./img/anne-s.jpg" alt="Anne">
                             <span>Anne J</span>
                         </li>
-                        <li class="flex">
+                        <li>
                             <img src="./img/alayne-s.jpg" alt="Alayne">
                             <span>Alayne T</span>
                         </li>
-                        <li class="flex">
+                        <li>
                             <img src="./img/arry-s.jpg" alt="Arry">
                             <span>Arry Y</span>
                         </li>
@@ -114,5 +114,6 @@
         </div>
         <!-- Column right ends -->
     </main>
+    <script src="script.js"></script>
 </body>
 </html>

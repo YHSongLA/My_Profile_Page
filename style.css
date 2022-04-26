@@ -134,8 +134,14 @@
     margin-top: 20px;
 }
 
+.flex-col {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .friends-list li {
-    margin: 10px 30px;
+    padding: 5px 90px;
 }
 
 .friends-list img {
@@ -158,7 +164,7 @@ button {
     font-weight: bold;
     font-size: 15px;
     padding: 5px;
-    margin-left: 300px;
+    /* margin-left: 300px; */
 }
 
 li {
@@ -182,5 +188,25 @@ h2 {
 }
 
 h3 {
-    margin: 15px
+    margin: 18px
+}
+
+.total-cn {
+    border-radius: 50%;
+    background-color: lightgray;
+    padding: 5px;
+    color: black;
+    margin-right: 20px;
+}
+
+.total-rq {
+    border-radius: 50%;
+    background-color: lightgray;
+    padding: 5px;
+    color: black;
+    margin-right: 20px;
+}
+
+.dates {
+    color: dimgray;
 }
